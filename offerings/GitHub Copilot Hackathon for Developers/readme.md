@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot Hackathon for Developers
-url: /offerings/GitHub Copilot Hackathon for Developers/
+url: /offerings/GitHub%20Copilot%20Hackathon%20for%20Developers/
 menus:
   main:
     parent: offerings

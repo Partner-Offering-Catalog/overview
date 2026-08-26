@@ -11,6 +11,8 @@ module:
       target: content/offerings
     - source: offerings
       target: static/offerings
+      excludeFiles:
+        - '**/*.md'
 
 menus:
   main:

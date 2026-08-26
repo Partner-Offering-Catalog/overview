@@ -1,6 +1,6 @@
 ---
 title: GitHub Copilot Hack2Skill
-url: /offerings/GitHub Copilot Hack2Skill/
+url: /offerings/GitHub%20Copilot%20Hack2Skill/
 menus:
   main:
     parent: offerings
