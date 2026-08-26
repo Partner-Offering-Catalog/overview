@@ -45,20 +45,22 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Configure Hugo module access
-        run: |
-          printf '%s\n' \
-            'machine github.com' \
-            '  login x-access-token' \
-            '  password ${{ github.token }}' \
-            > "${HOME}/.netrc"
-          chmod 600 "${HOME}/.netrc"
-          go env -w "GOPRIVATE=github.com/Partner-Offering-Catalog/*" "GONOSUMDB=github.com/Partner-Offering-Catalog/*"
-
       - name: Resolve Hugo modules
-        run: hugo mod get -u github.com/Partner-Offering-Catalog/static-page-template
+        env:
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ github.token }}@github.com/.insteadOf
+          GIT_CONFIG_VALUE_0: https://github.com/
+          GONOSUMDB: github.com/Partner-Offering-Catalog/*
+          GOPRIVATE: github.com/Partner-Offering-Catalog/*
+        run: hugo mod get github.com/Partner-Offering-Catalog/static-page-template@main
 
       - name: Build with Hugo
+        env:
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ github.token }}@github.com/.insteadOf
+          GIT_CONFIG_VALUE_0: https://github.com/
+          GONOSUMDB: github.com/Partner-Offering-Catalog/*
+          GOPRIVATE: github.com/Partner-Offering-Catalog/*
         run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
