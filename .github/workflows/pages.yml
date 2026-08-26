@@ -47,11 +47,11 @@ jobs:
 
       - name: Configure Hugo module access
         run: |
-          cat > "${HOME}/.netrc" <<EOF
-          machine github.com
-            login x-access-token
-            password ${{ github.token }}
-          EOF
+          printf '%s\n' \
+            'machine github.com' \
+            '  login x-access-token' \
+            '  password ${{ github.token }}' \
+            > "${HOME}/.netrc"
           chmod 600 "${HOME}/.netrc"
           go env -w "GOPRIVATE=github.com/Partner-Offering-Catalog/*" "GONOSUMDB=github.com/Partner-Offering-Catalog/*"
 
@@ -69,7 +69,6 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
