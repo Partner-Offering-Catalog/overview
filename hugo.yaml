@@ -1,0 +1,19 @@
+baseURL: https://partner-offering-catalog.github.io/overview/
+languageCode: en-us
+title: Partner Offering Catalog
+enableRobotsTXT: true
+
+module:
+  imports:
+    - path: github.com/Partner-Offering-Catalog/static-page-template
+  mounts:
+    - source: offerings
+      target: content/offerings
+    - source: offerings
+      target: static/offerings
+
+menus:
+  main:
+    - identifier: offerings
+      name: Offerings
+      weight: 10
