@@ -47,8 +47,13 @@ jobs:
 
       - name: Configure Hugo module access
         run: |
-          git config --global url."https://x-access-token:${{ github.token }}@github.com/".insteadOf "https://github.com/"
-          go env -w "GOPRIVATE=github.com/Partner-Offering-Catalog/*"
+          cat > "${HOME}/.netrc" <<EOF
+          machine github.com
+            login x-access-token
+            password ${{ github.token }}
+          EOF
+          chmod 600 "${HOME}/.netrc"
+          go env -w "GOPRIVATE=github.com/Partner-Offering-Catalog/*" "GONOSUMDB=github.com/Partner-Offering-Catalog/*"
 
       - name: Resolve Hugo modules
         run: hugo mod get -u github.com/Partner-Offering-Catalog/static-page-template

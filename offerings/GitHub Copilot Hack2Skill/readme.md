@@ -11,7 +11,7 @@ menus:
 
 ## Overview
 
-Enablement content for the GitHub Copilot Hack2Skill offering.
+Workshop-style enablement that helps teams build practical GitHub Copilot skills through guided challenges and hands-on exercises.
 
 ## Audience
 
