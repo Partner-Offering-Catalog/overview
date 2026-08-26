@@ -48,7 +48,7 @@ jobs:
       - name: Resolve Hugo modules
         env:
           GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ github.token }}@github.com/.insteadOf
+          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ secrets.HUGO_MODULES_TOKEN != '' && secrets.HUGO_MODULES_TOKEN || github.token }}@github.com/.insteadOf
           GIT_CONFIG_VALUE_0: https://github.com/
           GONOSUMDB: github.com/Partner-Offering-Catalog/*
           GOPRIVATE: github.com/Partner-Offering-Catalog/*
@@ -57,7 +57,7 @@ jobs:
       - name: Build with Hugo
         env:
           GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ github.token }}@github.com/.insteadOf
+          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ secrets.HUGO_MODULES_TOKEN != '' && secrets.HUGO_MODULES_TOKEN || github.token }}@github.com/.insteadOf
           GIT_CONFIG_VALUE_0: https://github.com/
           GONOSUMDB: github.com/Partner-Offering-Catalog/*
           GOPRIVATE: github.com/Partner-Offering-Catalog/*
