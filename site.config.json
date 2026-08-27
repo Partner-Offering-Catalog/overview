@@ -1,0 +1,27 @@
+{
+  "title": "Partner Offering Catalog",
+  "baseUrl": "/overview/",
+  "languageCode": "en-us",
+  "brand": "Partner Offering Catalog",
+  "description": "Starting point for all GitHub and Microsoft Partner Offerings.",
+  "repositoryLabel": "Repository",
+  "repositoryUrl": "https://github.com/Partner-Offering-Catalog/overview",
+  "footerNote": "Published with GitHub Pages.",
+  "heroStats": [
+    {
+      "label": "Catalog",
+      "value": "Offerings",
+      "caption": "Repeatable engagements partners can deliver"
+    },
+    {
+      "label": "Materials",
+      "value": "Ready",
+      "caption": "Guides, checklists, slides, and messaging"
+    },
+    {
+      "label": "Contribute",
+      "value": "Markdown",
+      "caption": "Add a folder under content/offerings"
+    }
+  ]
+}

@@ -1,13 +1,8 @@
 ---
 title: GitHub Copilot Hack2Skill
-url: /offerings/GitHub%20Copilot%20Hack2Skill/
-menus:
-  main:
-    parent: offerings
-    weight: 20
+description: Workshop-style enablement that builds practical GitHub Copilot skills through guided challenges and hands-on exercises.
+weight: 20
 ---
-
-# GitHub Copilot Hack2Skill
 
 ## Overview
 

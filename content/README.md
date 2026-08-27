@@ -1,0 +1,23 @@
+---
+title: Partner Offering Catalog
+description: Starting point for all GitHub and Microsoft Partner Offerings.
+weight: 1
+---
+
+This catalog collects the GitHub and Microsoft Partner Offerings that partners can
+deliver, together with the materials needed to prepare and run each engagement.
+
+## How to use the catalog
+
+- Browse **Offerings** in the left navigation to see every available offering.
+- Each offering page describes the delivery model, the intended audience, and the
+  materials that support it.
+- Supporting files live in the same folder as the offering page and are linked
+  from it.
+
+## Contribute a new offering
+
+Copy `template/offering/` in the repository into `content/offerings/<offering-name>/`,
+rename `readme.md` to `README.md`, and fill in the placeholders. The navigation
+entry, breadcrumbs, and cards are generated from the folder structure, so no
+further wiring is needed.
