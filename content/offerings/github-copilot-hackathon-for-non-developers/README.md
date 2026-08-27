@@ -1,13 +1,8 @@
 ---
 title: GitHub Copilot Hackathon for Non-Developers
-url: /offerings/GitHub%20Copilot%20Hackathon%20for%20Non-Developers/
-menus:
-  main:
-    parent: offerings
-    weight: 10
+description: Hands-on enablement for non-developer audiences to discover practical ways GitHub Copilot can support their work.
+weight: 10
 ---
-
-# GitHub Copilot Hackathon for Non-Developers
 
 ## Overview
 

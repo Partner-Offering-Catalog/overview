@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+name: Deploy site to Pages
 
 on:
   push:
@@ -23,50 +23,61 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.148.2
-      HUGO_ENVIRONMENT: production
+      TEMPLATE_REPOSITORY: Partner-Offering-Catalog/static-page-template
+      TEMPLATE_REF: main
+      TEMPLATE_DIR: .static-page-template
       TZ: UTC
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
 
-      - name: Setup Go
-        uses: actions/setup-go@v7
+      - name: Checkout static page template
+        uses: actions/checkout@v7.0.1
         with:
-          go-version: stable
+          repository: ${{ env.TEMPLATE_REPOSITORY }}
+          ref: ${{ env.TEMPLATE_REF }}
+          path: ${{ env.TEMPLATE_DIR }}
+          token: ${{ secrets.SITE_TEMPLATE_TOKEN || secrets.HUGO_MODULES_TOKEN || github.token }}
 
-      - name: Install Hugo CLI
-        run: |
-          wget -O "${RUNNER_TEMP}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
-          sudo dpkg -i "${RUNNER_TEMP}/hugo.deb"
-          hugo version
+      - name: Setup Node
+        uses: actions/setup-node@v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ${{ env.TEMPLATE_DIR }}/package-lock.json
+
+      - name: Install template dependencies
+        working-directory: ${{ env.TEMPLATE_DIR }}
+        run: npm ci
 
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v6.0.0
 
-      - name: Resolve Hugo modules
-        env:
-          GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ secrets.HUGO_MODULES_TOKEN != '' && secrets.HUGO_MODULES_TOKEN || github.token }}@github.com/.insteadOf
-          GIT_CONFIG_VALUE_0: https://github.com/
-          GONOSUMDB: github.com/Partner-Offering-Catalog/*
-          GOPRIVATE: github.com/Partner-Offering-Catalog/*
-        run: hugo mod get github.com/Partner-Offering-Catalog/static-page-template@main
+      - name: Stage repository content
+        run: |
+          rm -rf "${TEMPLATE_DIR}/content"
+          cp -R content "${TEMPLATE_DIR}/content"
+          cp site.config.json "${TEMPLATE_DIR}/site.config.json"
 
-      - name: Build with Hugo
+          # Non-Markdown files stay next to the offering page they belong to, so
+          # copy them into the template's static tree at the same relative path
+          # to keep links from an offering page working.
+          mkdir -p "${TEMPLATE_DIR}/static"
+          cp -R content/. "${TEMPLATE_DIR}/static/"
+          find "${TEMPLATE_DIR}/static" -name '*.md' -delete
+          find "${TEMPLATE_DIR}/static" -type d -empty -delete
+
+      - name: Build site
+        working-directory: ${{ env.TEMPLATE_DIR }}
         env:
-          GIT_CONFIG_COUNT: 1
-          GIT_CONFIG_KEY_0: url.https://x-access-token:${{ secrets.HUGO_MODULES_TOKEN != '' && secrets.HUGO_MODULES_TOKEN || github.token }}@github.com/.insteadOf
-          GIT_CONFIG_VALUE_0: https://github.com/
-          GONOSUMDB: github.com/Partner-Offering-Catalog/*
-          GOPRIVATE: github.com/Partner-Offering-Catalog/*
-        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          BASE_URL: ${{ steps.pages.outputs.base_path }}
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5.0.0
         with:
-          path: ./public
+          path: ${{ env.TEMPLATE_DIR }}/public
 
   deploy:
     environment:

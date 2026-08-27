@@ -1,13 +1,8 @@
 ---
 title: GitHub Copilot Hackathon for Developers
-url: /offerings/GitHub%20Copilot%20Hackathon%20for%20Developers/
-menus:
-  main:
-    parent: offerings
-    weight: 30
+description: Hands-on enablement for developer audiences to learn how GitHub Copilot supports day-to-day software delivery.
+weight: 30
 ---
-
-# GitHub Copilot Hackathon for Developers
 
 ## Overview
 
