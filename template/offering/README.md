@@ -1,40 +1,157 @@
-# [Offering name] template
+---
+title: Offering template
+description: Copy this folder to start a new offering. Every stage is present with its fields in place.
+weight: 900
+type: Template
+audience: [Offering authors]
+duration: Replace me
+level: Replace me
+owner: Replace me
+status: Template
+updated: 2026-08-27
+tags: [Template]
+---
 
-Use this folder as the starting point for a repeatable train-the-trainer, guided
-lab, or hackathon offering. Replace every `[placeholder]` before sharing the
-materials externally, and remove sections that do not apply.
+Copy this folder to `content/offerings/<your-offering>/`, replace the front matter, and delete
+the stages you do not need. Everything below is a working skeleton: the build validates this
+page on every run, so the syntax here is guaranteed to be current.
 
-## Choose the delivery model
+Use the space above `## Delivery framework` for the pitch — what the offering is, who it is
+for, and what a buyer gets. Use the space below the stages for reference material such as
+qualification questions and explicit exclusions.
 
-| Model | Best for | Trainer role | Participant outcome |
+See [authoring an offering](../authoring.md) for the full field reference, and the
+[delivery framework](../framework.md) for what each stage is meant to achieve.
+
+## Delivery framework
+
+### Discover & Qualify
+
+- **Timing:** T-90d → T-45d
+- **Owner:** Replace me
+- **Purpose:** Replace me.
+
+#### Entry criteria
+
+- Replace me.
+
+#### Activities
+
+- Replace me.
+
+#### Outputs
+
+- Replace me.
+
+#### Exit criteria
+
+- Replace me.
+
+#### Resources
+
+| Resource | Type | Audience | Link |
 | --- | --- | --- | --- |
-| Train-the-trainer | Scaling delivery through partner trainers | Demonstrate, coach, and validate readiness | Trainers can independently deliver the offering |
-| Guided lab | Teaching a defined skill or workflow | Explain, demonstrate, unblock, and debrief | Participants complete a working scenario |
-| Hackathon | Applying skills to an open-ended challenge | Frame the challenge, mentor teams, and facilitate judging | Teams present a solution and next steps |
+| Replace me | Deck | Partner | [authoring.md](../authoring.md) |
 
-## Contents
+### Engage & Commit
 
-- `one-pager.md` — decision-maker summary, scope, and success measures.
-- `preperation-checklist.md` — readiness tasks, owners, and go/no-go checks.
-- `trainer-guide.md` — delivery plan, facilitation guidance, and contingencies.
-- `trainer-slides.pptx` — editable slide deck aligned to the trainer guide.
-- `pre-engagement.eml` — participant invitation and preparation message.
-- `post-engagement.eml` — follow-up, feedback, and next-step message.
+- **Timing:** T-45d → T-30d
+- **Owner:** Replace me
+- **Purpose:** Replace me.
 
-## Before delivery
+#### Activities
 
-1. Define the learning outcomes, audience, format, and success measures in the
-   one-pager.
-2. Assign each checklist item to a named owner and record due dates.
-3. Test the participant path in a clean environment using only the instructions
-   and access provided to attendees.
-4. Tailor the emails, guide, and slides to the approved agenda and support
-   model.
-5. Hold the go/no-go review before sending the final participant reminder.
+- Replace me.
 
-## Template conventions
+#### Outputs
 
-- Brackets (`[like this]`) mark text that must be customized.
-- Keep customer, participant, tenant, and credential data out of this folder.
-- Store reusable lab files and sample data in an approved, access-controlled
-  location, then link to that location from the relevant materials.
+- Replace me.
+
+#### Exit criteria
+
+- Replace me.
+
+### Scope & Design
+
+- **Status:** Not applicable — replace this with a reason, or replace the whole stage with
+  real content.
+
+### Prepare
+
+- **Timing:** T-30d → T-7d
+- **Owner:** Replace me
+- **Purpose:** Replace me. Keep participant readiness and environment readiness separate;
+  they have different owners and different lead times.
+
+#### Activities
+
+- Replace me.
+
+#### Outputs
+
+- Replace me.
+
+#### Exit criteria
+
+- Replace me.
+
+### Readiness / Go–No-Go
+
+- **Timing:** T-7d → T-3d
+- **Owner:** Replace me
+- **Purpose:** Replace me.
+
+#### Activities
+
+- Replace me.
+
+#### Exit criteria
+
+- Replace me.
+
+### Execute
+
+- **Timing:** D0 → D+n
+- **Owner:** Replace me
+- **Purpose:** Replace me.
+
+#### Activities
+
+- Replace me.
+
+#### Outputs
+
+- Replace me.
+
+### Wrap & Close-out
+
+- **Timing:** D0 → T+7d
+- **Owner:** Replace me
+- **Purpose:** Replace me.
+
+#### Activities
+
+- Replace me.
+
+#### Outputs
+
+- Replace me.
+
+#### Exit criteria
+
+- Replace me.
+
+### Follow-up & Value realization
+
+- **Timing:** T+7d → T+90d
+- **Owner:** Replace me
+- **Purpose:** Replace me.
+
+## Qualification
+
+Replace with the questions that decide whether this offering is the right instrument. Any
+"no" should be a reason to propose something else.
+
+## What this offering does not cover
+
+Replace with the exclusions that would otherwise be assumed.
