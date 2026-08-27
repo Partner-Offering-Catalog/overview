@@ -1,10 +1,10 @@
 ---
-title: GitHub Copilot Enablement Hackathon
+title: GitHub Copilot Hackathon for Developers
 description: Hands-on enablement for developer audiences to learn how GitHub Copilot supports day-to-day software delivery.
 weight: 30
 type: Hackathon
 audience: [Partner developer, Customer developers, Engineering leads]
-duration: 3 days on site
+duration: 1 day on site
 level: Intermediate
 owner: Partner delivery lead
 status: Published
