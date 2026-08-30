@@ -1,3 +1,9 @@
+---
+title: Trainer guide
+description: Agenda, facilitation plan, and contingencies the delivery team runs the session from.
+weight: 20
+---
+
 # [Offering name] trainer guide
 
 > **Delivery model:** [Train-the-trainer | Guided lab | Hackathon]  

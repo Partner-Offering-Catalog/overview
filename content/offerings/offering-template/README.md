@@ -33,9 +33,9 @@ placeholders, or delete the ones this offering does not use.
 
 | File | Purpose |
 | --- | --- |
-| [one-pager.md](./assets/one-pager.md) | The offering summary a sponsor reads |
-| [trainer-guide.md](./assets/trainer-guide.md) | Agenda, facilitation plan, and contingencies |
-| [preparation-checklist.md](./assets/preparation-checklist.md) | Readiness tasks with owners and due dates |
+| [one-pager.md](./one-pager.md) | The offering summary a sponsor reads |
+| [trainer-guide.md](./trainer-guide.md) | Agenda, facilitation plan, and contingencies |
+| [preparation-checklist.md](./preparation-checklist.md) | Readiness tasks with owners and due dates |
 | [pre-engagement.eml](./assets/pre-engagement.eml) | Joining instructions and prerequisites |
 | [post-engagement.eml](./assets/post-engagement.eml) | Follow-up, resources, and feedback request |
 | [trainer-slides.pptx](./assets/trainer-slides.pptx) | Deck skeleton for the delivery days |
@@ -69,7 +69,7 @@ placeholders, or delete the ones this offering does not use.
 
 | Resource | Type | Audience | Link |
 | --- | --- | --- | --- |
-| Replace me | Deck | Partner | [one-pager.md](./assets/one-pager.md) |
+| Replace me | Deck | Partner | [one-pager.md](./one-pager.md) |
 
 ### Scope & Design
 
@@ -99,7 +99,7 @@ placeholders, or delete the ones this offering does not use.
 
 | Resource | Type | Audience | Link |
 | --- | --- | --- | --- |
-| Preparation checklist | Checklist | Internal | [preparation-checklist.md](./assets/preparation-checklist.md) |
+| Preparation checklist | Checklist | Internal | [preparation-checklist.md](./preparation-checklist.md) |
 | Joining instructions | Email template | Participant | [pre-engagement.eml](./assets/pre-engagement.eml) |
 
 ### Execute
@@ -129,7 +129,7 @@ placeholders, or delete the ones this offering does not use.
 
 | Resource | Type | Audience | Link |
 | --- | --- | --- | --- |
-| Trainer guide | Guide | Internal | [trainer-guide.md](./assets/trainer-guide.md) |
+| Trainer guide | Guide | Internal | [trainer-guide.md](./trainer-guide.md) |
 | Trainer slides | Deck | Internal | [trainer-slides.pptx](./assets/trainer-slides.pptx) |
 
 ### Wrap & Close-out
