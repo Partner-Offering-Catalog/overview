@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Offering catalog
+    url: https://partner-offering-catalog.github.io/overview/
+    about: Browse the offerings and the delivery framework before opening an issue.
