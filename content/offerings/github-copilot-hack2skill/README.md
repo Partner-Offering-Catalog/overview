@@ -2,6 +2,10 @@
 title: GitHub Copilot Hack2Skill
 description: Workshop-style enablement that builds practical GitHub Copilot skills through guided challenges and hands-on exercises.
 weight: 20
+type: Virtual
+audience: [Partners, Technical and non-technical teams]
+status: Draft
+updated: 2026-08-30
 ---
 
 ## Overview

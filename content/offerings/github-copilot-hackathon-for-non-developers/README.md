@@ -2,6 +2,10 @@
 title: GitHub Copilot Hackathon for Non-Developers
 description: Hands-on enablement for non-developer audiences to discover practical ways GitHub Copilot can support their work.
 weight: 10
+type: Virtual
+audience: [Business users, Consultants, Non-developer roles]
+status: Draft
+updated: 2026-08-30
 ---
 
 ## Overview

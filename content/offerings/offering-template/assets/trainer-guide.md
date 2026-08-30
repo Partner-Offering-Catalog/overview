@@ -12,7 +12,7 @@ the session. Align this statement with the approved one-pager.]
 
 ## Before the session
 
-1. Complete the applicable items in `preperation-checklist.md`.
+1. Complete the applicable items in `preparation-checklist.md`.
 2. Sign in using a trainer account and complete the entire participant path in
    the approved environment.
 3. Confirm that the trainer, support contact, and participants have the correct
