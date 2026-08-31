@@ -1,7 +1,7 @@
 ---
 title: Offering template
 description: Copy this folder to start a new offering. Every stage is present with its fields in place.
-weight: 900
+weight: 20
 type: In-Person
 audience: [Offering authors]
 duration: Replace me
@@ -13,8 +13,8 @@ tags: [Template]
 ---
 
 Copy this folder to `content/offerings/<your-offering>/`, replace the front matter, and delete
-the stages you do not need. Everything below is a working skeleton: the build validates this
-page on every run, so the syntax here is guaranteed to be current.
+the stages you do not need. Everything below is a working skeleton, and the build validates
+every page under `content/offerings/`, so the copy is checked from its first run.
 
 Set `type` to `In-Person` or `Virtual`, and keep `owner`, `level`, and `updated` filled in —
 they are shown on the offering page itself.
@@ -24,7 +24,7 @@ for, and what a buyer gets. Use the space below the stages for reference materia
 qualification questions and explicit exclusions.
 
 See [authoring an offering](../authoring.md) for the full field reference, and the
-[delivery framework](../../framework.md) for what each stage is meant to achieve.
+[delivery framework](../framework.md) for what each stage is meant to achieve.
 
 ## Supporting material
 

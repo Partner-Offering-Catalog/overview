@@ -1,7 +1,7 @@
 ---
 title: Authoring an offering
 description: The front matter, stage blocks, and timing vocabulary the build validates on every run.
-weight: 800
+weight: 10
 ---
 
 An offering page is read in two places: rendered on this site, and rendered by GitHub straight

@@ -89,4 +89,4 @@ of use, rather than in a convention that a delivery lead has to remember.
 An offering declares only the stages it uses. A stage that genuinely does not apply should
 still be declared, marked `Not applicable`, and given a reason: a reader can then tell the
 difference between "we thought about this and it does not apply" and "nobody has written this
-yet". See [authoring an offering](./offerings/authoring.md) for the exact syntax.
+yet". See [authoring an offering](./authoring.md) for the exact syntax.
