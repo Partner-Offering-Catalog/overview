@@ -8,8 +8,10 @@ An offering page is read in two places: rendered on this site, and rendered by G
 from the repository. It is therefore ordinary Markdown with a small, fixed structure that the
 build checks on every run, so a typo fails the build instead of quietly dropping a stage.
 
-The fastest way to start is to copy the [offering template](./offering-template/README.md),
-which is a working skeleton of everything below.
+The fastest way to start is to copy
+[`template/offering/`](https://github.com/Partner-Offering-Catalog/overview/tree/main/template/offering),
+a working skeleton of everything below. It lives outside `content/`, so it is not published as
+a page here: it exists only to be copied.
 
 ## Where an offering lives
 
