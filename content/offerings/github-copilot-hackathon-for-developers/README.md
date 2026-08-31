@@ -2,13 +2,13 @@
 title: GitHub Copilot Hackathon for Developers
 description: Hands-on enablement for developer audiences to learn how GitHub Copilot supports day-to-day software delivery.
 weight: 30
-type: Hackathon
+type: In-Person
 audience: [Partner developer, Customer developers, Engineering leads]
 duration: 1 day on site
 level: Intermediate
 owner: Partner delivery lead
 status: Published
-updated: 2026-08-27
+updated: 2026-08-30
 tags: [GitHub Copilot, Developer productivity, Adoption]
 ---
 
@@ -31,15 +31,17 @@ conventions that make any of it stick.
 
 ## Delivery framework
 
-The stages below are the shared [delivery framework](../framework.md). All eight apply to
+The stages below are the shared [delivery framework](../../framework.md). All five apply to
 this offering.
 
-### Discover & Qualify
+### Engage & Commit
 
-- **Timing:** T-90d → T-45d
-- **Owner:** Partner account lead
+- **Timing:** T-90d → T-30d
+- **Owner:** Partner account lead, handing over to the partner delivery lead once qualified
 - **Purpose:** Establish that there is a real backlog, a real sponsor, and a real reason to
-  measure, and qualify out early if any of the three is missing.
+  measure, qualify out early if any of the three is missing, and convert what survives into a
+  written joint commitment: named people, locked dates, and outcomes that can be checked
+  afterwards.
 
 #### Entry criteria
 
@@ -47,6 +49,8 @@ this offering.
 - At least one team with an active codebase and a backlog they control.
 
 #### Activities
+
+**Qualify — T-90d → T-45d**
 
 - Run the pitch conversation with the sponsor and the engineering lead together. Holding it
   with only one of them is the single most common cause of a hackathon that later cannot
@@ -57,41 +61,10 @@ this offering.
 - Test the qualification questions below. Any "no" is a reason to propose something else
   rather than to proceed hopefully.
 
-#### Outputs
-
-- A qualification note recording sponsor, target teams, candidate repository, and licence
-  position.
-- A go or no-go recommendation with a named alternative if the answer is no.
-
-#### Exit criteria
-
-- Sponsor identified by name and willing to attend the close-out.
-- A candidate repository named, and the teams that own it identified.
-- Both sides agree the hackathon is the right instrument.
-
-#### Resources
-
-| Resource | Type | Audience | Link |
-| --- | --- | --- | --- |
-| What is GitHub Copilot | Reference | Public | [docs.github.com](https://docs.github.com/en/copilot/get-started/what-is-github-copilot) |
-| Copilot feature overview | Reference | Customer | [github.com/features/copilot](https://github.com/features/copilot) |
-| Qualification questions | Checklist | Internal | See "Qualification" below |
-
-### Engage & Commit
-
-- **Timing:** T-45d → T-30d
-- **Owner:** Partner delivery lead
-- **Purpose:** Convert interest into a written joint commitment: named people, locked dates,
-  and outcomes that can be checked afterwards.
-
-#### Entry criteria
-
-- Qualification passed and a sponsor confirmed.
-
-#### Activities
+**Commit — T-45d → T-30d**
 
 - Agree two to four target outcomes, each with a measure and a baseline. An outcome without a
-  baseline cannot be reported on at stage 8, so capture the baseline **now** rather than
+  baseline cannot be reported on in Wrap, so capture the baseline **now** rather than
   reconstructing it later.
 - Name the participants individually. A headcount is not a commitment; four named developers
   who have cleared their calendar is.
@@ -103,11 +76,15 @@ this offering.
 
 #### Outputs
 
+- A qualification note recording sponsor, target teams, candidate repository, and licence
+  position, with a go or no-go recommendation and a named alternative if the answer is no.
 - A signed outcome charter: outcomes, measures, baselines, participants, dates, owners.
 - Calendar invitations for the delivery days, the close-out, and the T+90d review.
 
 #### Exit criteria
 
+- Sponsor identified by name and willing to attend the close-out.
+- A candidate repository named, and the teams that own it identified.
 - Charter agreed by the sponsor and the engineering lead.
 - Named participants, with their managers aware of the time commitment.
 - Delivery, close-out, and follow-up dates all in calendars.
@@ -116,6 +93,9 @@ this offering.
 
 | Resource | Type | Audience | Link |
 | --- | --- | --- | --- |
+| What is GitHub Copilot | Reference | Public | [docs.github.com](https://docs.github.com/en/copilot/get-started/what-is-github-copilot) |
+| Copilot feature overview | Reference | Customer | [github.com/features/copilot](https://github.com/features/copilot) |
+| Qualification questions | Checklist | Internal | See "Qualification" below |
 | Outcome charter | Template | Partner | Request from the offering owner |
 | Administering Copilot | Reference | Customer | [docs.github.com](https://docs.github.com/en/copilot/how-tos/administer-copilot) |
 
@@ -202,16 +182,17 @@ this offering.
 
 | Resource | Type | Audience | Link |
 | --- | --- | --- | --- |
-| Joining instructions | Email template | Participant | [joining-instructions.md](./joining-instructions.md) |
-| Environment readiness checklist | Checklist | Internal | [environment-readiness-checklist.csv](./assets/environment-readiness-checklist.csv) |
+| Joining instructions | Email template | Participant | Request from the offering owner |
+| Environment readiness checklist | Checklist | Internal | Request from the offering owner |
 | Copilot administration | Reference | Customer | [docs.github.com](https://docs.github.com/en/copilot/how-tos/administer-copilot) |
 
-### Readiness / Go–No-Go
+### Execute
 
-- **Timing:** T-7d → T-3d
+- **Timing:** T-7d → D+n
 - **Owner:** Partner delivery lead
-- **Purpose:** Prove the environment works by using it, then take an explicit decision while
-  there is still time to act on the answer.
+- **Purpose:** Prove the environment works by using it and take an explicit go/no-go decision
+  while there is still time to act on the answer, then deliver the days and capture evidence as
+  it is produced, not afterwards from memory.
 
 #### Entry criteria
 
@@ -219,32 +200,15 @@ this offering.
 
 #### Activities
 
+**Readiness and go/no-go — T-7d → T-3d**
+
 - Run a dry run on the real environment, from the delivery location's network, with a real
   participant account rather than an administrator account. Administrator accounts routinely
   succeed where participant accounts fail.
 - Walk one candidate backlog item end to end: prompt, change, test, pull request, review.
 - Confirm reviewer availability for each delivery day.
 - Take the go/no-go decision with the engineering lead and record it. "Probably fine" is a
-  no-go: the point of this stage is that postponing at T-5d is cheap and failing at D0 is not.
-
-#### Outputs
-
-- A dry-run record listing what worked and what was fixed.
-- A recorded go/no-go decision with a named decision-maker.
-
-#### Exit criteria
-
-- A participant-level account has completed the full loop successfully.
-- Go decision recorded, or a new date agreed.
-
-### Execute
-
-- **Timing:** D0 → D+n
-- **Owner:** Partner delivery lead
-- **Purpose:** Deliver the three days and capture evidence as it is produced, not afterwards
-  from memory.
-
-#### Activities
+  no-go: the point of this check is that postponing at T-5d is cheap and failing at D0 is not.
 
 **Day 1 — working in the real codebase**
 
@@ -269,12 +233,16 @@ this offering.
 
 #### Outputs
 
+- A dry-run record listing what worked and what was fixed, and a recorded go/no-go decision
+  with a named decision-maker.
 - Merged pull requests in the team's own repository.
 - A written set of team conventions, owned by the engineering lead.
 - Post-values for each charter measure.
 
 #### Exit criteria
 
+- A participant-level account completed the full loop before D0, and a go decision was recorded
+  or a new date agreed.
 - At least one merged pull request per team.
 - Every charter measure has a post-value recorded.
 
@@ -287,16 +255,19 @@ this offering.
 
 ### Wrap & Close-out
 
-- **Timing:** D0 → T+7d
-- **Owner:** Partner delivery lead
-- **Purpose:** Capture outcomes and feedback while participants are still in the room, and
-  deprovision the environment before it becomes a cost and a security liability.
+- **Timing:** D0 → T+90d
+- **Owner:** Partner delivery lead to T+7d, then partner account lead
+- **Purpose:** Capture outcomes and feedback while participants are still in the room,
+  deprovision the environment before it becomes a cost and a security liability, then make sure
+  the commitments are kept and the value shows up in the team's normal work.
 
 #### Entry criteria
 
 - Delivery days complete.
 
 #### Activities
+
+**Close-out — D0 → T+7d**
 
 - Run the demos with the sponsor present. A sponsor who watches their own team demo their own
   merged code is the entire follow-up conversation.
@@ -308,31 +279,7 @@ this offering.
   access granted for the engagement, and confirm in writing that it is done.
 - Agree the follow-up commitments and who owns each one.
 
-#### Outputs
-
-- An outcome summary shared with the sponsor.
-- Feedback collected and summarised.
-- Written confirmation that the environment has been deprovisioned.
-- A commitment list with named owners and dates.
-
-#### Exit criteria
-
-- Sponsor has received the outcome summary.
-- Deprovisioning confirmed in writing.
-- Every follow-up commitment has an owner and a date.
-
-### Follow-up & Value realization
-
-- **Timing:** T+7d → T+90d
-- **Owner:** Partner account lead
-- **Purpose:** Make sure the commitments are kept, the value shows up in the team's normal
-  work, and what was learned improves this offering.
-
-#### Entry criteria
-
-- Outcome summary delivered and commitments agreed.
-
-#### Activities
+**Value realization — T+7d → T+90d**
 
 - Check in at T+30d against the commitment list. Commitments not checked at 30 days are rarely
   kept at 90.
@@ -347,12 +294,16 @@ this offering.
 
 #### Outputs
 
-- A T+30d commitment status note.
+- An outcome summary shared with the sponsor, and feedback collected and summarised.
+- Written confirmation that the environment has been deprovisioned.
+- A commitment list with named owners and dates, and a T+30d status note against it.
 - A T+90d value review with re-measured outcomes.
 - Edits to this offering, or a recorded decision that no change is needed.
 
 #### Exit criteria
 
+- Sponsor has received the outcome summary, and deprovisioning is confirmed in writing.
+- Every follow-up commitment has an owner and a date.
 - T+90d review held with the sponsor.
 - Retrospective actions applied to this offering, and the `updated` date changed.
 

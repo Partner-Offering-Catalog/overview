@@ -1,3 +1,9 @@
+---
+title: Offering one-pager
+description: The sponsor-facing summary of the offering: outcomes, audience, agenda, and what the customer must provide.
+weight: 10
+---
+
 # [Offering name]
 
 > **Status:** [Draft | Approved | Retired]  

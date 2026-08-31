@@ -1,0 +1,125 @@
+name: Engagement request
+description: Request a delivery of an existing offering for a customer or partner.
+title: "[Engagement] <offering> for <customer>"
+labels: ["engagement request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a delivery of an offering that is already in the catalog.
+        To propose a new offering, use the **Offering proposal** form instead.
+
+        The fields below are the Engage stage of the
+        [delivery framework](https://partner-offering-catalog.github.io/overview/framework/):
+        a request that can answer them is a request that can be scheduled.
+
+  - type: input
+    id: offering
+    attributes:
+      label: Offering
+      description: Which catalog offering is being requested?
+      placeholder: GitHub Copilot Hackathon for Developers
+    validations:
+      required: true
+
+  - type: input
+    id: customer
+    attributes:
+      label: Customer or partner
+      description: The organisation the engagement is for.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: delivery-mode
+    attributes:
+      label: Delivery mode
+      options:
+        - In-Person
+        - Virtual
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location or time zone
+      description: Venue and city for an in-person delivery, or the time zone to run a virtual one in.
+    validations:
+      required: true
+
+  - type: input
+    id: dates
+    attributes:
+      label: Requested dates
+      description: Preferred dates, plus any date that is impossible. Delivery day is `D0` in the framework.
+      placeholder: "Preferred: week of 12 October. Not possible: 20-24 October."
+    validations:
+      required: true
+
+  - type: input
+    id: sponsor
+    attributes:
+      label: Sponsor
+      description: The named person who owns the goal this engagement serves and can attend the close-out.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Target outcomes
+      description: Two to four outcomes, each with a measure and — if you have it — a baseline.
+      placeholder: |
+        - Reduce time from first commit to merged pull request. Baseline: 4.5 days.
+        - Every team has written conventions for reviewing generated code. Baseline: none.
+    validations:
+      required: true
+
+  - type: textarea
+    id: participants
+    attributes:
+      label: Participants
+      description: How many people, in which roles, and what they already know.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where will participants actually work?
+      options:
+        - The customer's own repository and tenant
+        - A partner-provided training environment
+        - Not decided yet
+    validations:
+      required: true
+
+  - type: textarea
+    id: licensing
+    attributes:
+      label: Licensing and access
+      description: Are the required licences already assigned? If not, who approves them, and by when?
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: NDA, data handling, network, accessibility, or language requirements.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: readiness
+    attributes:
+      label: Before submitting
+      options:
+        - label: The sponsor knows this request is being made.
+          required: true
+        - label: A baseline can be captured before the delivery date.
+          required: false
+        - label: No credentials, tokens, or personal participant data are included in this issue.
+          required: true

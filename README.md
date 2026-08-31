@@ -11,24 +11,33 @@ Site content lives under `content/`:
 
 - Every folder under `content/` becomes a navigation entry and **must** contain a
   `README.md`, which is the page shown for that entry.
+- `content/framework.md` is the shared delivery framework, at the root of the menu.
 - Offering details live in `content/offerings/<offering-name>/README.md`.
-- Supporting static files for an offering should be kept in the same offering
-  folder and linked from its `README.md`; the Pages workflow publishes them next
-  to the offering page.
+- Supporting Markdown for an offering stays in the same offering folder and is linked
+  from its `README.md`. Decks, spreadsheets, and images go in an `assets/` folder
+  inside the offering; `assets/` is published as-is and is not scanned for pages.
 - `title`, `description`, and `weight` front matter control the page title,
-  summary card text, and ordering.
+  summary card text, and ordering. An offering also carries `type` (`In-Person` or
+  `Virtual`), `audience`, `duration`, `level`, `owner`, `status`, `updated`, and `tags`.
 
 `site.config.json` holds the site title, brand, description, repository link, and
 hero cards.
 
-Use `template/offering/` as the starting point for a new offering: copy it to
-`content/offerings/<offering-name>/`, rename `readme.md` to `README.md`, and
-replace the placeholders.
+Use `content/offerings/offering-template/` as the starting point for a new offering:
+copy it to `content/offerings/<offering-name>/` and replace the placeholders. See
+`content/offerings/authoring.md` for the full field reference.
 
 If the shared template repository is private or internal, add a repository secret
 named `SITE_TEMPLATE_TOKEN` with read access to
 `Partner-Offering-Catalog/static-page-template` so the Pages workflow can check it
 out. The previous `HUGO_MODULES_TOKEN` secret is still accepted as a fallback.
+
+## Issues
+
+Two issue forms are available under **New issue**:
+
+- **Engagement request** — request a delivery of an offering that is already in the catalog.
+- **Offering proposal** — propose a new offering, or a substantial change to an existing one.
 
 ## Local preview
 

@@ -1,3 +1,9 @@
+---
+title: Preparation checklist
+description: Readiness tasks with owners and due dates, reviewed at the go/no-go before Execute.
+weight: 30
+---
+
 # [Offering name] preparation checklist
 
 > Update the status, owner, and due date for every applicable task. Escalate

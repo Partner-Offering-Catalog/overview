@@ -1,0 +1,137 @@
+name: Offering proposal
+description: Propose a new offering for the catalog, or a substantial change to an existing one.
+title: "[Offering] <name>"
+labels: ["offering proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to propose a new offering. To request a delivery of an offering that is
+        already in the catalog, use the **Engagement request** form instead.
+
+        A proposal becomes a folder under `content/offerings/`; see
+        [authoring an offering](https://partner-offering-catalog.github.io/overview/offerings/authoring/)
+        for the page structure and
+        [the delivery framework](https://partner-offering-catalog.github.io/overview/framework/)
+        for what each stage is meant to achieve.
+
+  - type: input
+    id: name
+    attributes:
+      label: Offering name
+      placeholder: GitHub Copilot Hackathon for Data Teams
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: One-sentence summary
+      description: This becomes the offering description in the catalog table and the page lede.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it solves
+      description: What goes wrong today for the customer or partner that this offering fixes?
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience and prerequisites
+      description: Who it is for, and what they must already know or have access to.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: delivery-mode
+    attributes:
+      label: Delivery mode
+      options:
+        - In-Person
+        - Virtual
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: Duration
+      placeholder: 1 day on site
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Introductory
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Offering owner
+      description: The role accountable for keeping this offering current.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Outcomes and measures
+      description: What a buyer gets, and how each outcome is measured.
+    validations:
+      required: true
+
+  - type: textarea
+    id: stages
+    attributes:
+      label: Framework stages
+      description: |
+        What happens in each stage, and which ones do not apply. Say why for the ones that
+        do not — "not applicable, and here is the reason" reads very differently from silence.
+      value: |
+        - **Engage (T-90d → T-30d):**
+        - **Scope (T-30d → T-21d):**
+        - **Prepare (T-30d → T-7d):**
+        - **Execute (T-7d → D+n):**
+        - **Wrap (D0 → T+90d):**
+    validations:
+      required: true
+
+  - type: textarea
+    id: materials
+    attributes:
+      label: Materials
+      description: Which decks, guides, checklists, and templates exist, and which still need writing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: exclusions
+    attributes:
+      label: What this offering does not cover
+      description: The boundaries that would otherwise be assumed.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: readiness
+    attributes:
+      label: Before submitting
+      options:
+        - label: This is not already covered by an offering in the catalog.
+          required: true
+        - label: The offering has been delivered at least once, or a first delivery is planned.
+          required: false
+        - label: No credentials, tokens, or customer-confidential material are included in this issue.
+          required: true

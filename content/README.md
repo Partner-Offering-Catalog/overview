@@ -9,7 +9,9 @@ deliver, together with the materials needed to prepare and run each engagement.
 
 ## How to use the catalog
 
-- Browse **Offerings** in the left navigation to see every available offering.
+- **Delivery framework** in the left navigation describes the five stages every offering
+  is written against, from first conversation to realized value.
+- Browse **Offerings** to see every available offering.
 - Each offering page describes the delivery model, the intended audience, and the
   materials that support it.
 - Supporting files live in the same folder as the offering page and are linked
@@ -17,7 +19,7 @@ deliver, together with the materials needed to prepare and run each engagement.
 
 ## Contribute a new offering
 
-Copy `template/offering/` in the repository into `content/offerings/<offering-name>/`,
-rename `readme.md` to `README.md`, and fill in the placeholders. The navigation
-entry, breadcrumbs, and cards are generated from the folder structure, so no
-further wiring is needed.
+Copy `content/offerings/offering-template/` into `content/offerings/<offering-name>/` and
+fill in the placeholders. The navigation entry, breadcrumbs, and cards are generated from
+the folder structure, so no further wiring is needed. [Authoring an offering](./offerings/authoring.md)
+describes the front matter and the stage blocks.

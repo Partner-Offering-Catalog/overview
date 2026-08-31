@@ -4,12 +4,13 @@ description: All GitHub and Microsoft Partner Offering available
 weight: 5
 ---
 
-Every offering in this catalog follows the same [delivery framework](./framework.md), so a
-reader always meets the same eight stages in the same order, anchored to the same countdown
-to delivery day. An offering fills in only the stages it actually uses.
+Every offering in this catalog follows the same [delivery framework](../framework.md), so a
+reader always meets the same five stages in the same order, anchored to the same countdown to
+delivery day. An offering fills in only the stages it actually uses.
 
 The table below is generated at build time from the offering pages themselves, so it cannot
-drift from them, and a new offering appears here as soon as its folder is added.
+drift from them, and a new offering appears here as soon as its folder is added. Owner, level,
+and last-updated date are kept on each offering page rather than in the table.
 
 <!-- offering-catalog -->
 
