@@ -90,13 +90,13 @@ Use these headings exactly. The heading text is the stage name from the
 [delivery framework](./framework.md), and it is the vocabulary the shared site template
 validates against:
 
-| # | Stage | Heading to use |
-| --- | --- | --- |
-| 1 | Engage | `### Engage` |
-| 2 | Scope | `### Scope` |
-| 3 | Prepare | `### Prepare` |
-| 4 | Execute | `### Execute` |
-| 5 | Wrap | `### Wrap` |
+| # | Heading |
+| --- | --- |
+| 1 | `### Engage` |
+| 2 | `### Scope` |
+| 3 | `### Prepare` |
+| 4 | `### Execute` |
+| 5 | `### Wrap` |
 
 An earlier version of the framework split these five stages into eight, and the longer titles
 it used — `Engage & Commit`, `Scope & Design`, `Wrap & Close-out`, and the three stages since
