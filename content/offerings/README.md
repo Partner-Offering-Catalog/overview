@@ -17,6 +17,8 @@ and last-updated date are kept on each offering page rather than in the table.
 ## Add an offering
 
 Create a folder under `content/offerings/`, add a `README.md`, and the offering joins both
-the navigation and the table above. [Authoring an offering](./authoring.md) describes the
-front matter and the stage blocks; the [offering template](./offering-template/README.md) is
-a ready-to-copy skeleton that the build validates on every run.
+the navigation and the table above. [Authoring an offering](../authoring.md) describes the
+front matter and the stage blocks; copy
+[`template/`](https://github.com/Partner-Offering-Catalog/overview/tree/main/template)
+in the repository to start from a ready-made skeleton, and the build validates the copy as soon
+as it lands here.

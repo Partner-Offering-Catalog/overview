@@ -7,14 +7,15 @@ audience: [Offering authors]
 duration: Replace me
 level: Replace me
 owner: Replace me
-status: Template
+status: Draft
 updated: 2026-08-30
 tags: [Template]
 ---
 
-Copy this folder to `content/offerings/<your-offering>/`, replace the front matter, and delete
-the stages you do not need. Everything below is a working skeleton: the build validates this
-page on every run, so the syntax here is guaranteed to be current.
+This folder is not published. Copy it to `content/offerings/<your-offering>/`, replace the
+front matter, and delete the stages you do not need. Everything below is a working skeleton,
+and the build validates every page under `content/offerings/`, so the copy is checked from its
+first run.
 
 Set `type` to `In-Person` or `Virtual`, and keep `owner`, `level`, and `updated` filled in —
 they are shown on the offering page itself.
@@ -23,8 +24,11 @@ Use the space above `## Delivery framework` for the pitch — what the offering 
 for, and what a buyer gets. Use the space below the stages for reference material such as
 qualification questions and explicit exclusions.
 
-See [authoring an offering](../authoring.md) for the full field reference, and the
-[delivery framework](../../framework.md) for what each stage is meant to achieve.
+See [authoring an offering](https://partner-offering-catalog.github.io/overview/authoring/) for
+the full field reference, and the
+[delivery framework](https://partner-offering-catalog.github.io/overview/framework/) for what
+each stage is meant to achieve. Both links are absolute so that they keep working here, where
+this folder is read straight from the repository, and in the copy you make under `content/`.
 
 ## Supporting material
 

@@ -1,15 +1,17 @@
 ---
 title: Authoring an offering
 description: The front matter, stage blocks, and timing vocabulary the build validates on every run.
-weight: 800
+weight: 10
 ---
 
 An offering page is read in two places: rendered on this site, and rendered by GitHub straight
 from the repository. It is therefore ordinary Markdown with a small, fixed structure that the
 build checks on every run, so a typo fails the build instead of quietly dropping a stage.
 
-The fastest way to start is to copy the [offering template](./offering-template/README.md),
-which is a working skeleton of everything below.
+The fastest way to start is to copy
+[`template/`](https://github.com/Partner-Offering-Catalog/overview/tree/main/template),
+a working skeleton of everything below. It lives outside `content/`, so it is not published as
+a page here: it exists only to be copied.
 
 ## Where an offering lives
 
@@ -49,7 +51,7 @@ tags: [GitHub Copilot, Developer productivity]
 | `duration` | How long the delivery itself takes |
 | `level` | Assumed starting experience, shown on this page |
 | `owner` | The accountable role for the offering, shown on this page |
-| `status` | `Published`, `Draft`, or `Template`. A `Template` offering is a scaffold and is kept out of the overview table |
+| `status` | `Published`, or `Draft` for an offering that is not finished. `Template` also exists and keeps a page out of the overview table, but the skeleton now lives in `template/`, so an offering here should not use it |
 | `updated` | The date the offering last changed, shown on this page |
 | `tags` | Free-form labels shown under the page header |
 

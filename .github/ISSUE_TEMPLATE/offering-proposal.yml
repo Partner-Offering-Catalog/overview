@@ -10,7 +10,7 @@ body:
         already in the catalog, use the **Engagement request** form instead.
 
         A proposal becomes a folder under `content/offerings/`; see
-        [authoring an offering](https://partner-offering-catalog.github.io/overview/offerings/authoring/)
+        [authoring an offering](https://partner-offering-catalog.github.io/overview/authoring/)
         for the page structure and
         [the delivery framework](https://partner-offering-catalog.github.io/overview/framework/)
         for what each stage is meant to achieve.
