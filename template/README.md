@@ -46,7 +46,7 @@ placeholders, or delete the ones this offering does not use.
 
 ## Delivery framework
 
-### Engage & Commit
+### Engage
 
 - **Timing:** T-90d → T-30d
 - **Owner:** Replace me
@@ -75,7 +75,7 @@ placeholders, or delete the ones this offering does not use.
 | --- | --- | --- | --- |
 | Replace me | Deck | Partner | [one-pager.md](./one-pager.md) |
 
-### Scope & Design
+### Scope
 
 - **Status:** Not applicable — replace this with a reason, or replace the whole stage with
   real content.
@@ -136,7 +136,7 @@ placeholders, or delete the ones this offering does not use.
 | Trainer guide | Guide | Internal | [trainer-guide.md](./trainer-guide.md) |
 | Trainer slides | Deck | Internal | [trainer-slides.pptx](./assets/trainer-slides.pptx) |
 
-### Wrap & Close-out
+### Wrap
 
 - **Timing:** D0 → T+90d
 - **Owner:** Replace me
