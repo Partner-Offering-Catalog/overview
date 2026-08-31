@@ -51,7 +51,7 @@ tags: [GitHub Copilot, Developer productivity]
 | `duration` | How long the delivery itself takes |
 | `level` | Assumed starting experience, shown on this page |
 | `owner` | The accountable role for the offering, shown on this page |
-| `status` | `Published`, `Draft`, or `Template`. A `Template` offering is a scaffold and is kept out of the overview table |
+| `status` | `Published`, or `Draft` for an offering that is not finished. `Template` also exists and keeps a page out of the overview table, but the skeleton now lives in `template/offering/`, so an offering here should not use it |
 | `updated` | The date the offering last changed, shown on this page |
 | `tags` | Free-form labels shown under the page header |
 
