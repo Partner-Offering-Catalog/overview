@@ -19,7 +19,7 @@ deliver, together with the materials needed to prepare and run each engagement.
 
 ## Contribute a new offering
 
-Copy `template/offering/` in the repository into `content/offerings/<offering-name>/` and
+Copy `template/` in the repository into `content/offerings/<offering-name>/` and
 fill in the placeholders. The navigation entry, breadcrumbs, and cards are generated from
 the folder structure, so no further wiring is needed. [Authoring an offering](./authoring.md)
 describes the front matter and the stage blocks.

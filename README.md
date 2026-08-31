@@ -25,7 +25,7 @@ Site content lives under `content/`:
 `site.config.json` holds the site title, brand, description, repository link, and
 hero cards.
 
-Use `template/offering/` as the starting point for a new offering: copy it to
+Use `template/` as the starting point for a new offering: copy it to
 `content/offerings/<offering-name>/` and replace the placeholders. It sits outside `content/`
 on purpose, so it is never published as a page and never appears in the navigation. See
 `content/authoring.md` for the full field reference.

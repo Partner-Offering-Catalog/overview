@@ -9,7 +9,7 @@ from the repository. It is therefore ordinary Markdown with a small, fixed struc
 build checks on every run, so a typo fails the build instead of quietly dropping a stage.
 
 The fastest way to start is to copy
-[`template/offering/`](https://github.com/Partner-Offering-Catalog/overview/tree/main/template/offering),
+[`template/`](https://github.com/Partner-Offering-Catalog/overview/tree/main/template),
 a working skeleton of everything below. It lives outside `content/`, so it is not published as
 a page here: it exists only to be copied.
 
@@ -51,7 +51,7 @@ tags: [GitHub Copilot, Developer productivity]
 | `duration` | How long the delivery itself takes |
 | `level` | Assumed starting experience, shown on this page |
 | `owner` | The accountable role for the offering, shown on this page |
-| `status` | `Published`, or `Draft` for an offering that is not finished. `Template` also exists and keeps a page out of the overview table, but the skeleton now lives in `template/offering/`, so an offering here should not use it |
+| `status` | `Published`, or `Draft` for an offering that is not finished. `Template` also exists and keeps a page out of the overview table, but the skeleton now lives in `template/`, so an offering here should not use it |
 | `updated` | The date the offering last changed, shown on this page |
 | `tags` | Free-form labels shown under the page header |
 
