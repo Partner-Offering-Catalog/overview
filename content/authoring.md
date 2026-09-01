@@ -71,7 +71,7 @@ framework order. Declare only the stages the offering actually uses.
 ```markdown
 ## Delivery framework
 
-### Engage & Commit
+### Engage
 
 - **Timing:** T-90d → T-30d
 - **Owner:** Partner account lead
@@ -86,16 +86,23 @@ framework order. Declare only the stages the offering actually uses.
 - Run the pitch conversation with the sponsor and the engineering lead together.
 ```
 
-Use these headings exactly. The heading text is the vocabulary the shared site template
-validates against, and it is longer than the stage name used elsewhere in the catalog:
+Use these headings exactly. The heading text is the stage name from the
+[delivery framework](./framework.md), and it is the vocabulary the shared site template
+validates against:
 
-| # | Stage | Heading to use |
-| --- | --- | --- |
-| 1 | Engage | `### Engage & Commit` |
-| 2 | Scope | `### Scope & Design` |
-| 3 | Prepare | `### Prepare` |
-| 4 | Execute | `### Execute` |
-| 5 | Wrap | `### Wrap & Close-out` |
+| # | Heading |
+| --- | --- |
+| 1 | `### Engage` |
+| 2 | `### Scope` |
+| 3 | `### Prepare` |
+| 4 | `### Execute` |
+| 5 | `### Wrap` |
+
+An earlier version of the framework split these five stages into eight, and the longer titles
+it used — `Engage & Commit`, `Scope & Design`, `Wrap & Close-out`, and the three stages since
+merged away — are rejected rather than accepted as aliases. The build names the stage that
+absorbed each one, so a page written against the old framework can be migrated from the error
+message.
 
 ### Stage fields
 
@@ -152,7 +159,7 @@ a plausible wrong URL.
 Declare the stage and say so, rather than leaving it out:
 
 ```markdown
-### Scope & Design
+### Scope
 
 - **Status:** Not applicable — the curriculum is fixed and is not tailored per engagement.
 ```

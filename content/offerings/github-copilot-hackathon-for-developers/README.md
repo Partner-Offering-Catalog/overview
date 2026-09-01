@@ -34,7 +34,7 @@ conventions that make any of it stick.
 The stages below are the shared [delivery framework](../../framework.md). All five apply to
 this offering.
 
-### Engage & Commit
+### Engage
 
 - **Timing:** T-90d → T-30d
 - **Owner:** Partner account lead, handing over to the partner delivery lead once qualified
@@ -99,7 +99,7 @@ this offering.
 | Outcome charter | Template | Partner | Request from the offering owner |
 | Administering Copilot | Reference | Customer | [docs.github.com](https://docs.github.com/en/copilot/how-tos/administer-copilot) |
 
-### Scope & Design
+### Scope
 
 - **Timing:** T-30d → T-21d
 - **Owner:** Partner delivery lead, with the engineering lead
@@ -253,7 +253,7 @@ this offering.
 | Facilitator run sheet | Deck | Internal | Request from the offering owner |
 | Copilot documentation | Reference | Participant | [docs.github.com](https://docs.github.com/en/copilot) |
 
-### Wrap & Close-out
+### Wrap
 
 - **Timing:** D0 → T+90d
 - **Owner:** Partner delivery lead to T+7d, then partner account lead
