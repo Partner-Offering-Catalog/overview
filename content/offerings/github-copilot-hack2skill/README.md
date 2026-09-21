@@ -43,11 +43,12 @@ exercises, success measures, and follow-up plan.
 
 ## Delivery framework
 
-### Discover & Qualify
+### Engage
 
 - **Timing:** T-30d → T-21d
 - **Owner:** Partner account lead
-- **Purpose:** Identify the customer outcome, target sales play, personas, and experience levels.
+- **Purpose:** Identify the customer outcome, target sales play, personas, and experience levels,
+  then commit to a focused learning engagement.
 
 #### Entry criteria
 
@@ -58,38 +59,21 @@ exercises, success measures, and follow-up plan.
 - Confirm whether Innovate, Scale, or Trust is the primary sales-play conversation.
 - Identify participating developers, knowledge workers, and/or IT admins.
 - Assess whether the cohort needs the Beginner or Advanced path.
-
-#### Outputs
-
-- Qualification note with primary sales play, personas, level, and desired outcomes.
-
-#### Exit criteria
-
-- Sponsor, audience, sales play, and level are agreed.
-
-### Engage & Commit
-
-- **Timing:** T-21d → T-14d
-- **Owner:** Partner delivery lead
-- **Purpose:** Convert the qualified opportunity into a committed learning engagement.
-
-#### Activities
-
 - Agree dates, cohort size, delivery mode, and success measures.
-- Confirm the selected sales-play track and required customer examples.
 - Name the customer sponsor and delivery contacts.
 
 #### Outputs
 
+- Qualification note with primary sales play, personas, level, and desired outcomes.
 - Outcome charter and confirmed delivery plan.
 
 #### Exit criteria
 
-- Dates, participants, track, level, and success measures are confirmed.
+- Sponsor, audience, sales play, level, dates, and success measures are agreed.
 
-### Scope & Design
+### Scope
 
-- **Timing:** T-14d → T-10d
+- **Timing:** T-21d → T-10d
 - **Owner:** Partner delivery lead
 - **Purpose:** Tailor the exercises to the selected sales play, persona, and experience level.
 
@@ -98,6 +82,7 @@ exercises, success measures, and follow-up plan.
 - Select the Beginner or Advanced challenge set.
 - Map examples to developer, knowledge-worker, or IT-admin workflows.
 - Align exercises to Innovate, Scale, or Trust outcomes.
+- Confirm the customer examples, agenda, and facilitator plan.
 
 #### Outputs
 
@@ -109,7 +94,7 @@ exercises, success measures, and follow-up plan.
 
 ### Prepare
 
-- **Timing:** T-10d → T-3d
+- **Timing:** T-10d → T-1d
 - **Owner:** Partner delivery lead and customer IT admin
 - **Purpose:** Make the participant, access, and environment prerequisites ready.
 
@@ -127,82 +112,52 @@ exercises, success measures, and follow-up plan.
 
 - Participants can access the required Copilot surfaces and materials.
 
-### Readiness / Go–No-Go
-
-- **Timing:** T-3d → T-1d
-- **Owner:** Partner delivery lead
-- **Purpose:** Verify that the selected workshop can run as designed.
-
-#### Activities
-
-- Run a facilitator dry run using the selected challenges.
-- Confirm access, timing, examples, and support contacts.
-- Record a go/no-go decision with the sponsor.
-
-#### Outputs
-
-- Readiness decision and resolved blockers.
-
-#### Exit criteria
-
-- The facilitator, environment, and participant prerequisites are ready.
-
 ### Execute
 
 - **Timing:** D0 → D+n
 - **Owner:** Partner delivery lead
-- **Purpose:** Build practical Copilot capability through guided instruction and hands-on work.
+- **Purpose:** Verify readiness and build practical Copilot capability through guided instruction
+  and hands-on work.
 
 #### Activities
 
+- Run a facilitator dry run using the selected challenges and record a go/no-go decision.
 - Introduce the selected sales play and expected customer outcomes.
 - Deliver Beginner or Advanced challenges for the selected personas.
 - Capture questions, examples, and evidence of applied learning.
 
 #### Outputs
 
+- Readiness decision and resolved blockers.
 - Completed exercises, reusable prompts or workflows, and participant feedback.
 
 #### Exit criteria
 
+- The facilitator, environment, and participant prerequisites are ready.
 - Participants complete the agreed challenges and can describe their next practical use case.
 
-### Wrap & Close-out
+### Wrap
 
-- **Timing:** D+n → T+7d
-- **Owner:** Partner delivery lead
-- **Purpose:** Consolidate learning and turn workshop results into an adoption plan.
+- **Timing:** D+n → T+90d
+- **Owner:** Partner delivery lead and customer sponsor
+- **Purpose:** Consolidate learning, measure progress, and turn workshop results into an adoption
+  plan.
 
 #### Activities
 
 - Review outcomes, participant feedback, and open questions.
 - Share recommended next steps for the selected sales play.
 - Remove temporary access or workshop resources where applicable.
-
-#### Outputs
-
-- Close-out summary, adoption actions, and owner assignments.
-
-#### Exit criteria
-
-- Sponsor accepts the summary and the next actions have owners and dates.
-
-### Follow-up & Value realization
-
-- **Timing:** T+7d → T+90d
-- **Owner:** Partner delivery lead and customer sponsor
-- **Purpose:** Check whether skills are being applied and whether the sales-play outcome is progressing.
-
-#### Activities
-
 - Review adoption signals and examples from each target persona.
 - Revisit the Beginner or Advanced progression path.
 - Identify whether a follow-on Innovate, Scale, or Trust engagement is appropriate.
 
 #### Outputs
 
+- Close-out summary, adoption actions, and owner assignments.
 - Value-realization review and recommendations for continued adoption.
 
 #### Exit criteria
 
+- Sponsor accepts the summary and the next actions have owners and dates.
 - The sponsor has an evidence-based view of progress and agreed next steps.
