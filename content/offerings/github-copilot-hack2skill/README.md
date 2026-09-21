@@ -1,10 +1,10 @@
 ---
 title: GitHub Copilot Hack2Skill
-description: Sales-play-aligned enablement that builds practical GitHub Copilot skills for developers, knowledge workers, and IT admins.
+description: Sales-play-aligned enablement with guided learning and hands-on building for developers, knowledge workers, and IT admins.
 weight: 20
-type: Virtual
+type: Virtual or In-Person
 audience: [Developers, Knowledge workers, IT admins]
-duration: Half-day or 1 day per sales play and level
+duration: 2 hours virtual or 1 day in person
 level: Beginner and Advanced
 owner: Partner delivery lead
 status: Draft
@@ -40,6 +40,81 @@ exercises, success measures, and follow-up plan.
   summarizing, researching, and transforming work content.
 - **IT admins:** Beginner foundations or advanced workflows for enablement, governance,
   configuration, and adoption support.
+
+## Sample agendas
+
+Both formats use the same learning model: participants follow the trainer during the first
+half, then apply and combine the skills to build something relevant to their role during the
+second half.
+
+### Virtual — 2 hours
+
+| Time | Format | Activity |
+| --- | --- | --- |
+| 00:00–00:10 | Welcome | Introduce the selected sales play, persona outcomes, and build challenge. |
+| 00:10–00:35 | Follow the trainer | Learn the core Copilot workflow and observe a complete example. |
+| 00:35–01:00 | Guided practice | Repeat the workflow with trainer support and select skills to combine. |
+| 01:00–01:10 | Build planning | Define a small role-specific outcome and choose the required skills. |
+| 01:10–01:45 | Build | Create or adapt the solution independently, with facilitator coaching. |
+| 01:45–02:00 | Share and close | Demonstrate results, capture learning, and agree the next practical use case. |
+
+### In person — 1 day
+
+| Time | Format | Activity |
+| --- | --- | --- |
+| 09:00–09:20 | Welcome | Introduce the selected sales play, persona outcomes, and success measures. |
+| 09:20–10:30 | Follow the trainer | Learn the core workflow through a live demonstration and guided exercises. |
+| 10:30–10:45 | Break | Pause and resolve setup questions. |
+| 10:45–12:00 | Guided practice | Complete a persona-specific challenge and inspect the resulting artifacts. |
+| 12:00–12:30 | Build planning | Select a use case, combine the required skills, and define evidence of completion. |
+| 12:30–13:30 | Lunch | — |
+| 13:30–15:15 | Build | Create or adapt a role-specific solution, with facilitator coaching. |
+| 15:15–15:30 | Break | — |
+| 15:30–16:15 | Test and improve | Review, evaluate, secure, or govern the result according to the selected track. |
+| 16:15–17:00 | Showcase and close | Demonstrate outcomes, give feedback, and agree adoption actions. |
+
+## Content library
+
+The facilitator can use one source end to end or combine modules from multiple sources. The
+recommended pattern is to select one foundation skill, one role-specific workflow, and one
+build challenge that supports the chosen Innovate, Scale, or Trust outcome.
+
+### All-up — build your own workflow
+
+Use a build-your-own path when participants should combine Copilot instructions, prompts,
+agents, skills, and repository context into a workflow for their own role or use case.
+
+- [Agentic SDLC Hackathon](https://github.com/ekyritsi/agentic-sdlc-hackathon) — persona-based
+  developer, IT-admin, and business tracks that progress from learning and executing a
+  reference workflow to extending a repository with custom Copilot artifacts.
+- [Copilot Academy](https://github.com/copilot-academy/copilot-academy.github.io) —
+  self-contained labs covering Copilot customization, instructions, prompts, agents, skills,
+  planning, security tools, and agentic workflows.
+
+### Developers
+
+- [GitHub Copilot Workshop](https://github.com/benjamintokgoez/githubcopilotworkshop) — a
+  one-day supervised agentic-engineering workshop focused on understanding, planning,
+  implementing, testing, reviewing, and explaining changes.
+- [Agentic SDLC Hackathon](https://github.com/ekyritsi/agentic-sdlc-hackathon) — a
+  repository-native developer path covering feature clarification, planning, testing,
+  review, and Copilot customization.
+- [Copilot Academy](https://github.com/copilot-academy/copilot-academy.github.io) — modular
+  developer labs that can be selected individually for Beginner or Advanced cohorts.
+
+### Developers and IT admins — GitHub and Microsoft Foundry
+
+- [Agentic Hackathon](https://github.com/haforsbe/agentic-hackathon) — progressive labs for
+  building agents with Microsoft Agent Framework, Microsoft Foundry, GitHub Copilot, hosted
+  deployment, and MCP-powered tool integration.
+- [Optimize with Foundry Skills and GitHub Copilot](https://github.com/microsoft-foundry/agent-optimization-workshop/blob/main/labs/core/03-optimize-skills.md)
+  — an advanced evaluate, fix, redeploy, and optimize loop driven from GitHub Copilot.
+
+### IT admins
+
+- [Agentic Platform Microhack](https://microhack.apexops.pro/) — an advanced platform and
+  governance scenario covering requirements, architecture, infrastructure as code,
+  compliance validation, and operational documentation.
 
 ## Delivery framework
 
