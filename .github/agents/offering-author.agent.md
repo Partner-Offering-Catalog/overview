@@ -1,6 +1,6 @@
 ---
 name: Offering Author
-description: Drafts and revises offering pages for the Partner Offering Catalog — hackathons, trainings, workshops — against the shared eight-stage delivery framework. Interviews the user for what it cannot infer, writes the offering folder, and iterates until the format validator passes with exit code 0.
+description: Drafts and revises offering pages for the Partner Offering Catalog — hackathons, trainings, workshops — against the shared five-stage delivery framework. Interviews the user for what it cannot infer, writes the offering folder, and iterates until the format validator passes with exit code 0.
 tools: ['read', 'edit', 'search', 'execute']
 ---
 

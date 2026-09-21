@@ -25,9 +25,9 @@ See [authoring an offering](../authoring.md) for the full field reference, and t
 
 ## Delivery framework
 
-### Discover & Qualify
+### Engage
 
-- **Timing:** T-90d → T-45d
+- **Timing:** T-90d → T-30d
 - **Owner:** Replace me
 - **Purpose:** Replace me.
 
@@ -53,25 +53,7 @@ See [authoring an offering](../authoring.md) for the full field reference, and t
 | --- | --- | --- | --- |
 | Replace me | Deck | Partner | [authoring.md](../authoring.md) |
 
-### Engage & Commit
-
-- **Timing:** T-45d → T-30d
-- **Owner:** Replace me
-- **Purpose:** Replace me.
-
-#### Activities
-
-- Replace me.
-
-#### Outputs
-
-- Replace me.
-
-#### Exit criteria
-
-- Replace me.
-
-### Scope & Design
+### Scope
 
 - **Status:** Not applicable — replace this with a reason, or replace the whole stage with
   real content.
@@ -83,25 +65,15 @@ See [authoring an offering](../authoring.md) for the full field reference, and t
 - **Purpose:** Replace me. Keep participant readiness and environment readiness separate;
   they have different owners and different lead times.
 
+#### Entry criteria
+
+- Replace me.
+
 #### Activities
 
 - Replace me.
 
 #### Outputs
-
-- Replace me.
-
-#### Exit criteria
-
-- Replace me.
-
-### Readiness / Go–No-Go
-
-- **Timing:** T-7d → T-3d
-- **Owner:** Replace me
-- **Purpose:** Replace me.
-
-#### Activities
 
 - Replace me.
 
@@ -111,23 +83,14 @@ See [authoring an offering](../authoring.md) for the full field reference, and t
 
 ### Execute
 
-- **Timing:** D0 → D+n
+- **Timing:** T-7d → D+n
 - **Owner:** Replace me
-- **Purpose:** Replace me.
+- **Purpose:** Replace me. Cover the dry run and the go/no-go decision here as well as
+  the delivery days themselves.
 
-#### Activities
+#### Entry criteria
 
 - Replace me.
-
-#### Outputs
-
-- Replace me.
-
-### Wrap & Close-out
-
-- **Timing:** D0 → T+7d
-- **Owner:** Replace me
-- **Purpose:** Replace me.
 
 #### Activities
 
@@ -141,11 +104,28 @@ See [authoring an offering](../authoring.md) for the full field reference, and t
 
 - Replace me.
 
-### Follow-up & Value realization
+### Wrap
 
-- **Timing:** T+7d → T+90d
+- **Timing:** D0 → T+90d
 - **Owner:** Replace me
-- **Purpose:** Replace me.
+- **Purpose:** Replace me. Cover close-out and value realization here; they share a
+  commitment list and an owner, on two different clocks.
+
+#### Entry criteria
+
+- Replace me.
+
+#### Activities
+
+- Replace me.
+
+#### Outputs
+
+- Replace me.
+
+#### Exit criteria
+
+- Replace me.
 
 ## Qualification
 

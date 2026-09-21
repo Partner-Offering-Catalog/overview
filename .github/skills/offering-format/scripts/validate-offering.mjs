@@ -26,15 +26,27 @@ export const SCHEMA_VERSION = 1;
 
 /** The delivery framework spine. Order here is the order stages must appear in. */
 export const STAGES = [
-  { id: 'discover-and-qualify', number: 1, title: 'Discover & Qualify', core: true, defaultAnchor: 'T-90d → T-45d' },
-  { id: 'engage-and-commit', number: 2, title: 'Engage & Commit', core: true, defaultAnchor: 'T-45d → T-30d' },
-  { id: 'scope-and-design', number: 3, title: 'Scope & Design', core: false, defaultAnchor: 'T-30d → T-21d' },
-  { id: 'prepare', number: 4, title: 'Prepare', core: true, defaultAnchor: 'T-30d → T-7d' },
-  { id: 'readiness-go-no-go', number: 5, title: 'Readiness / Go–No-Go', core: false, defaultAnchor: 'T-7d → T-3d' },
-  { id: 'execute', number: 6, title: 'Execute', core: true, defaultAnchor: 'D0 → D+n' },
-  { id: 'wrap-and-close-out', number: 7, title: 'Wrap & Close-out', core: true, defaultAnchor: 'D0 → T+7d' },
-  { id: 'follow-up-and-value-realization', number: 8, title: 'Follow-up & Value realization', core: true, defaultAnchor: 'T+7d → T+90d' },
+  { id: 'engage', number: 1, title: 'Engage', core: true, defaultAnchor: 'T-90d → T-30d' },
+  { id: 'scope', number: 2, title: 'Scope', core: false, defaultAnchor: 'T-30d → T-21d' },
+  { id: 'prepare', number: 3, title: 'Prepare', core: true, defaultAnchor: 'T-30d → T-7d' },
+  { id: 'execute', number: 4, title: 'Execute', core: true, defaultAnchor: 'T-7d → D+n' },
+  { id: 'wrap', number: 5, title: 'Wrap', core: true, defaultAnchor: 'D0 → T+90d' },
 ];
+
+/**
+ * Stage titles from the earlier, longer framework, mapped to the stage that
+ * absorbed them. They are not accepted as headings — an offering must use the
+ * merged title — but naming the successor turns "not a framework stage" into
+ * an instruction.
+ */
+export const MERGED_STAGE_TITLES = new Map([
+  ['discover-and-qualify', 'engage'],
+  ['engage-and-commit', 'engage'],
+  ['scope-and-design', 'scope'],
+  ['readiness-go-no-go', 'execute'],
+  ['wrap-and-close-out', 'wrap'],
+  ['follow-up-and-value-realization', 'wrap'],
+]);
 
 export const FRAMEWORK_HEADING = 'Delivery framework';
 export const STAGE_FIELDS = ['Timing', 'Owner', 'Purpose', 'Status'];
@@ -103,6 +115,20 @@ const STAGE_BY_KEY = new Map();
 for (const stage of STAGES) {
   STAGE_BY_KEY.set(stage.id, stage);
   STAGE_BY_KEY.set(normalizeKey(stage.title), stage);
+}
+const STAGE_BY_ID = new Map(STAGES.map((stage) => [stage.id, stage]));
+
+/**
+ * The fix hint for an unrecognised stage heading. A title from the earlier
+ * framework names the stage that absorbed it, so the fix is a rename rather
+ * than a hunt through the stage list.
+ */
+export function describeUnknownStage(title) {
+  const successor = STAGE_BY_ID.get(MERGED_STAGE_TITLES.get(normalizeKey(title)));
+  if (successor) {
+    return `"${title}" was merged into stage ${successor.number} "${successor.title}". Use that heading instead.`;
+  }
+  return `Use one of: ${STAGES.map((stage) => stage.title).join(', ')}.`;
 }
 const SECTION_BY_KEY = new Map(STAGE_SECTIONS.map((s) => [normalizeKey(s), s]));
 const FIELD_BY_KEY = new Map(STAGE_FIELDS.map((f) => [normalizeKey(f), f]));
@@ -414,7 +440,7 @@ export function validateOffering(raw, filePath = 'README.md') {
       if (!definition) {
         add('stage/unknown', segment.line,
           `"${segment.title}" is not a framework stage`,
-          `Use one of: ${STAGES.map((s) => s.title).join(', ')}.`);
+          describeUnknownStage(segment.title));
         currentStage = null;
         currentSection = null;
         continue;
