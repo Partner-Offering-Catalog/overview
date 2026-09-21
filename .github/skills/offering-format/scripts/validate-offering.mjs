@@ -38,6 +38,9 @@ export const STAGES = [
  * absorbed them. They are not accepted as headings — an offering must use the
  * merged title — but naming the successor turns "not a framework stage" into
  * an instruction.
+ *
+ * Keys and values are normalizeKey slugs, matching the site generator's own
+ * table so the two can be diffed line for line.
  */
 export const MERGED_STAGE_TITLES = new Map([
   ['discover-and-qualify', 'engage'],
@@ -116,7 +119,6 @@ for (const stage of STAGES) {
   STAGE_BY_KEY.set(stage.id, stage);
   STAGE_BY_KEY.set(normalizeKey(stage.title), stage);
 }
-const STAGE_BY_ID = new Map(STAGES.map((stage) => [stage.id, stage]));
 
 /**
  * The fix hint for an unrecognised stage heading. A title from the earlier
@@ -124,7 +126,7 @@ const STAGE_BY_ID = new Map(STAGES.map((stage) => [stage.id, stage]));
  * than a hunt through the stage list.
  */
 export function describeUnknownStage(title) {
-  const successor = STAGE_BY_ID.get(MERGED_STAGE_TITLES.get(normalizeKey(title)));
+  const successor = STAGE_BY_KEY.get(MERGED_STAGE_TITLES.get(normalizeKey(title)));
   if (successor) {
     return `"${title}" was merged into stage ${successor.number} "${successor.title}". Use that heading instead.`;
   }
