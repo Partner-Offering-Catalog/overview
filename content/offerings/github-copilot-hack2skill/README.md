@@ -1,10 +1,10 @@
 ---
 title: GitHub Copilot Hack2Skill
-description: Sales-play-aligned enablement that builds practical GitHub Copilot skills for developers, knowledge workers, and IT admins.
+description: Sales-play-aligned enablement with guided learning and hands-on building for developers, knowledge workers, and IT admins.
 weight: 20
-type: Virtual
+type: Virtual or In-Person
 audience: [Developers, Knowledge workers, IT admins]
-duration: Half-day or 1 day per sales play and level
+duration: 2 hours virtual or 1 day in person
 level: Beginner and Advanced
 owner: Partner delivery lead
 status: Draft
@@ -40,6 +40,44 @@ exercises, success measures, and follow-up plan.
   summarizing, researching, and transforming work content.
 - **IT admins:** Beginner foundations or advanced workflows for enablement, governance,
   configuration, and adoption support.
+
+## Sample agendas
+
+Both formats use the same learning model: participants follow the trainer during the first
+half, then apply and combine the skills to build something relevant to their role during the
+second half.
+
+### Virtual — 2 hours
+
+| Time | Format | Activity |
+| --- | --- | --- |
+| 00:00–00:10 | Welcome | Introduce the selected sales play, persona outcomes, and build challenge. |
+| 00:10–00:35 | Follow the trainer | Learn the core Copilot workflow and observe a complete example. |
+| 00:35–01:00 | Guided practice | Repeat the workflow with trainer support and select skills to combine. |
+| 01:00–01:10 | Build planning | Define a small role-specific outcome and choose the required skills. |
+| 01:10–01:45 | Build | Create or adapt the solution independently, with facilitator coaching. |
+| 01:45–02:00 | Share and close | Demonstrate results, capture learning, and agree the next practical use case. |
+
+### In person — 1 day
+
+| Time | Format | Activity |
+| --- | --- | --- |
+| 09:00–09:20 | Welcome | Introduce the selected sales play, persona outcomes, and success measures. |
+| 09:20–10:30 | Follow the trainer | Learn the core workflow through a live demonstration and guided exercises. |
+| 10:30–10:45 | Break | Pause and resolve setup questions. |
+| 10:45–12:00 | Guided practice | Complete a persona-specific challenge and inspect the resulting artifacts. |
+| 12:00–12:30 | Build planning | Select a use case, combine the required skills, and define evidence of completion. |
+| 12:30–13:30 | Lunch | — |
+| 13:30–15:15 | Build | Create or adapt a role-specific solution, with facilitator coaching. |
+| 15:15–15:30 | Break | — |
+| 15:30–16:15 | Test and improve | Review, evaluate, secure, or govern the result according to the selected track. |
+| 16:15–17:00 | Showcase and close | Demonstrate outcomes, give feedback, and agree adoption actions. |
+
+## Content and challenge library
+
+Choose a complete workshop or combine modules to create a role-specific challenge.
+
+[Open the Hack2Skill content and challenge library](./content-library.md)
 
 ## Delivery framework
 
