@@ -1,6 +1,6 @@
 ---
 name: offering-format
-description: Use this skill when drafting, editing, reviewing, or validating an offering page (a hackathon, training, workshop, or similar engagement) for the Partner Offering Catalog. It defines the eight-stage delivery framework, the exact Markdown and front matter an offering README.md must use, and a validator script that checks a draft deterministically. Trigger on requests like "add a new offering", "draft a hackathon page", "why does the offering build fail", or "check this offering against the framework".
+description: Use this skill when drafting, editing, reviewing, or validating an offering page (a hackathon, training, workshop, or similar engagement) for the Partner Offering Catalog. It defines the five-stage delivery framework, the exact Markdown and front matter an offering README.md must use, and a validator script that checks a draft deterministically. Trigger on requests like "add a new offering", "draft a hackathon page", "why does the offering build fail", or "check this offering against the framework".
 license: MIT
 compatibility: Cross-platform. Requires Node.js 18 or later to run scripts/validate-offering.mjs. No network access and no package installation needed.
 ---
@@ -8,7 +8,7 @@ compatibility: Cross-platform. Requires Node.js 18 or later to run scripts/valid
 # Offering format
 
 Every offering in the catalog is one folder containing a `README.md` that describes the
-engagement against a shared eight-stage delivery framework. The site generator turns that
+engagement against a shared five-stage delivery framework. The site generator turns that
 file into a timeline and a row in the catalog table.
 
 The format is a contract, not a style guide: the build **fails** on a mistyped stage title,
@@ -129,25 +129,29 @@ An offering declares only the stages it uses. To record that a stage was conside
 does not apply, declare it and give a reason:
 
 ```markdown
-### Scope & Design
+### Scope
 
 - **Status:** Not applicable — fixed curriculum, nothing to tailor.
 ```
 
 That renders differently from a stage nobody has written yet, which is the point.
 
-## The eight stages
+## The five stages
 
 | # | Stage | Default anchor | Core |
 |---|-------|----------------|------|
-| 1 | Discover & Qualify | `T-90d → T-45d` | yes |
-| 2 | Engage & Commit | `T-45d → T-30d` | yes |
-| 3 | Scope & Design | `T-30d → T-21d` | no |
-| 4 | Prepare | `T-30d → T-7d` | yes |
-| 5 | Readiness / Go–No-Go | `T-7d → T-3d` | no |
-| 6 | Execute | `D0 → D+n` | yes |
-| 7 | Wrap & Close-out | `D0 → T+7d` | yes |
-| 8 | Follow-up & Value realization | `T+7d → T+90d` | yes |
+| 1 | Engage | `T-90d → T-30d` | yes |
+| 2 | Scope | `T-30d → T-21d` | no |
+| 3 | Prepare | `T-30d → T-7d` | yes |
+| 4 | Execute | `T-7d → D+n` | yes |
+| 5 | Wrap | `D0 → T+90d` | yes |
+
+The default anchor is a starting point, not a rule: `Timing` belongs to the offering.
+
+The framework was previously eight stages. Those longer titles — `Discover & Qualify`,
+`Engage & Commit`, `Scope & Design`, `Readiness / Go–No-Go`, `Wrap & Close-out`, and
+`Follow-up & Value realization` — are **rejected**, not aliased, but the validator names the
+stage that absorbed each one, so an old page can be migrated from the error message.
 
 See [reference/framework.md](reference/framework.md) for what each stage is for and what
 good content looks like in it.
@@ -173,7 +177,7 @@ Copy [reference/template.md](reference/template.md) as the starting skeleton.
 - Give every stage an accountable **role**, not a person's name.
 - Prefer evidence over adjectives: "reviewed pull requests merged" beats "great engagement".
 - Keep `description` under about 200 characters — it is rendered inside a table cell.
-- Deprovisioning belongs in Wrap & Close-out. It is a cost and security obligation with a
-  hard deadline, not a nicety.
+- Deprovisioning belongs in Wrap, in its close-out half. It is a cost and security
+  obligation with a hard deadline, not a nicety.
 - Never invent a stage, field, subsection, audience, or timing token. The vocabulary above
   is closed. If something genuinely does not fit, say so rather than bending the format.
